@@ -1,0 +1,14 @@
+.gridSquare{
+    border-style: solid;
+    border-color: black;
+    margin: 0px;
+
+}
+
+.grid-container{
+    display: grid;
+    gap: 0px;
+    border-style: solid;
+    height: 600px;
+    width: 600px;
+}
