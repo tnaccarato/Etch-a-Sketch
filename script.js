@@ -66,17 +66,19 @@ function addListeners() {
         document.addEventListener("mouseup", function () {
             mouseDown = false; // Set mouseDown to false when mouse button is released
         });
+
         // Adds a listener to the slider that changes the size of the grid
         slider.oninput = function () {
             document.querySelector(".squaresnumber").value = this.value;
             resetGrid();
             makeGrid(slider.value);
         };
+
         // Adds a listener to reset the grid on click
         resetButton.addEventListener("click", function () {
-            resetGrid();
-            makeGrid(slider.value);
-        })
+            const gridSquares = document.querySelectorAll(".gridSquare");
+            gridSquares.forEach(square => square.classList.remove("coloured"));
+        });
 }
 
 
