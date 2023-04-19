@@ -5,10 +5,26 @@
 
 }
 
+.options{
+    display: inline;
+    margin-right: 30px;
+}
+
+.content{
+    display: flex;
+}
 .grid-container{
     display: grid;
     gap: 0px;
     border-style: solid;
     height: 600px;
     width: 600px;
+}
+
+.gridSquare.active{
+    background-color: yellow;
+}
+
+.gridSquare.coloured{
+    background-color: black;
 }
